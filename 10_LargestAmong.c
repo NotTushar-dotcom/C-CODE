@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+    int a, b, c, large;
+    printf("Enter a, b, c:");
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b)
+    {
+        if(a>c)
+        large = a;
+        else
+        large = c;
+    }
+    else
+    {
+        if(b>c)
+        large = b;
+        else
+        large = c;
+    }
+    printf("The Largest number among all is %d",large);
+}
